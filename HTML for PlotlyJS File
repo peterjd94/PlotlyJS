@@ -18,8 +18,27 @@
     y: [2,4,6,8], 
     type: 'line'
 };
+      var layout = {
+  title: 'Youtube Views',
+  xaxis: {
+    title: 'Months',
+    titlefont: {
+      family: 'Courier New, monospace',
+      size: 18,
+      color: '#7f7f7f'
+    }
+  },
+  yaxis: {
+    title: 'Monthly views',
+    titlefont: {
+      family: 'Courier New, monospace',
+      size: 18,
+      color: '#7f7f7f'
+    }
+  }
+};
     var data = [trace2, trace3];
-    Plotly.newPlot('myDiv', data);
+    Plotly.newPlot('myDiv', data, layout);
   </script>
 </body>
 </html>
